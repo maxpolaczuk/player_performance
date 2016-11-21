@@ -10,4 +10,4 @@ Starting with a few good CS:GO players. They are:
 
 Now we are going to be using an LSTM to do this through Keras (which is an easy to use neural network package) running through python and Theano. There is a fair bit of preprocessing, which is done in the accompanying notebook and covered by our article.
 
-- Max
+
