@@ -17,19 +17,14 @@ This may but true, but can you give this a number? The problem we are solving is
 
 **So without futher adieu, let us talk about how Better Bets constructs player form and its results:**
 
-In simple terms, form is measured at time $$t$$ and depends on a players results all the way back to his first professional (recorded) game. We measure his average performance for his lifetime and observe the deviation in this game $$t$$ from the trend. If he is doing beter than usual, he will be deviating upwards from the average. This 'deviation' is measured in the following ratio:
+In simple terms, form is measured at time $t$ and depends on a players results all the way back to his first professional (recorded) game. We measure his average performance for his lifetime and observe the deviation in this game $$t$$ from the trend. If he is doing beter than usual, he will be deviating upwards from the average. This 'deviation' is measured in the following ratio:
 
-$$\text{Form in game t}=\frac{\text{Performance in game t}}{\text{Average performance}}$$
+<img src="http://i65.tinypic.com/25r0dgz.jpg" alt="alt text" width="440" height="100">
 
-
-
-\
-
-
-Hopefully it is clear that when this number is greater than 1 then this player is doing well.  Observeve multiple games with a ratio greater than 1 and he is on a 'hot-streak' (and of course the opposite for less than 1).\
+Hopefully it is clear that when this number is greater than 1 then this player is doing well.  Observeve multiple games with a ratio greater than 1 and he is on a 'hot-streak' (and of course the opposite for less than 1).
 The problem here is how to estimate player performance and average player performance!
 
-**Estimating player performance** \
+**Estimating player performance** 
 The way we thought to do this was in two parts:
 * 'Raw' performance
 * 'Relative' performance.
@@ -38,17 +33,10 @@ Raw performance is simply a players raw statistics for a game- the stuff that th
 
 Relative performance refers loosley to how the player is performing in his team. Having a relative measure of performance allows us to look past featues of a game that might 'disguise' a player having an excellent performance despite his team performing poorly (and thus a low level of kills on his part) and vice-versa. Defining relative performance required some creation of metrics (measurement) on our part, these are:
 
-*$$\frac{\text{Kills}}{\text{Team}\text{Kills}}$$
-
-*$$\frac{\text{Deaths}}{\text{Team}\text{Deaths}}$$
-
-*$$\frac{KDR}{\text{TeamScore}}$$
+<img src="http://i63.tinypic.com/25i3xjq.jpg" alt="alt text" width="440" height="80">
 
 So finally, lets give this metric some functional form and define a players performance at game $$T$$:
 
-$$log \Big[\frac{K^{2}_{T}}{D^{2}_{T}}\Big]+log\Big[\frac{\frac{K_{T}}{TK_{T}}.\frac{KDR_{T}}{log[(1+TS_{T})](TS_{T}-ES_{T})}}{\frac{D_{T}}{TD_{T}}}\Big]$$
-
-It's a bit dense, so let's expand this
 ![N|Solid](http://i64.tinypic.com/99gsih.jpg)
 
 That's better, but it is quite intimidating. Lets discuss what is going on here.\
