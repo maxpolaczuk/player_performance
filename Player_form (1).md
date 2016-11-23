@@ -73,3 +73,14 @@ Finally, the overall expression of **form** in its full extent- our true goal:
 
 ![N|Solid](http://i64.tinypic.com/bhhfmf.jpg)
 
+#Machine Learning-RNN's and LSTM
+
+The first half of this blog discussed what we wanted to know and how we could estimate this. Namely- player form, and the equation defined just above. This works fine if you want to go back and have historical evidence of a players form: all you do is plug in the required variables of each game and you get out a number. In fact, you can do this for a player whole history and get a trend over time. 
+
+How can one make money out of this? In particular, how are we able to estimate what a players form will be *before* the game has happened? This is the vital and having a good estimate *before* the fact is key to improving your insight as to what the outcome of a game should be and thus improving your payoffs the long-run. The solution to future estimation of form is where Machine Learning coming in; specifically an extension of Recurrent Neural Networks (RNN)-the Long-Term Short-Term (LSTM) model.
+
+RNN's:
+
+
+
+
