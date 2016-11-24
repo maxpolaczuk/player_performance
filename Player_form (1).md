@@ -26,17 +26,19 @@ Form is a measure of how well a player is performing in a game. Player performan
 
 Hopefully, it is clear that when this number is greater than 1, this player is doing well and thus, his form is higher. Observe multiple games with a ratio greater than 1, and he is on a ‘hot-streak’ (and conversely, the opposite for less than 1).
 
-The problem here is how to estimate player performance and average player performance!
+The problem here is how to estimate player performance and average player performance! 
 
 
 **Estimating player performance** 
-The way we thought to do this was in two parts:
+Note: *The actual form here is somewhat arbitrary. This can be considered a simplified version for explanations sake; in reality the model we use has many more variables than the ones we talk about here*.
+
+The way we thought to model player performance was split into two parts:
 * 'Raw' performance
 * 'Relative' performance.
 
-Raw performance is simply the raw statistics for a game, the stuﬀ that the players see themselves. This includes kills, deaths and an implied kill-death-ratio (KDR). In particular, we took KDR and kills as the relevant statistics to use here.
+**Raw** performance is simply the raw statistics for a game, the stuﬀ that the players see themselves. This includes kills, deaths and an implied kill-death-ratio (KDR). In particular, we took KDR and kills as the relevant statistics to use here.
 
-Relative performance refers loosely to how the player is performing in the scope of his team only. Having a relative measure of performance allows us to look past features of a game that might ‘disguise’ a player having an excellent performance despite his team performing poorly (and thus a low level of kills on his part) and vice-versa.
+**Relative** performance refers loosely to how the player is performing in the scope of his team only. Having a relative measure of performance allows us to look past features of a game that might ‘disguise’ a player having an excellent performance despite his team performing poorly (and thus a low level of kills on his part) and vice-versa.
 
 Defining relative performance required some creation of metrics (measurement) on our part, these are:
 
@@ -75,12 +77,11 @@ Finally, the overall expression of **form** in its full extent- our true goal:
 
 #Machine Learning-RNN's and LSTM
 
-The first half of this blog discussed what we wanted to know and how we could estimate this. Namely- player form, and the equation defined just above. This works fine if you want to go back and have historical evidence of a players form: all you do is plug in the required variables of each game and you get out a number. In fact, you can do this for a player whole history and get a trend over time. 
+The first half of this blog discussed what we wanted to know and an example of how we could estimate this. Namely- player form, and the equation defined just above. This works fine if you want to go back and have historical evidence of a players form: all you do is plug in the required variables of each game and you get out a number. In fact, you can do this for a player whole history and get a trend over time. 
 
 How can one make money out of this? In particular, how are we able to estimate what a players form will be *before* the game has happened? This is the vital and having a good estimate *before* the fact is key to improving your insight as to what the outcome of a game should be and thus improving your payoffs the long-run. The solution to future estimation of form is where Machine Learning coming in; specifically an extension of Recurrent Neural Networks (RNN)-the Long-Term Short-Term (LSTM) model.
 
-RNN's:
-
-
+**RNN's:**
+Before we can talk about LSTM, we need to cover the superset of models that they belong to
 
 
