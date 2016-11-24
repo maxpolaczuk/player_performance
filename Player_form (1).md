@@ -92,4 +92,14 @@ In its existence a RNN 'knows' 3 things:
 * 2: What it is trying to optimize
 * 3: That it is an RNN (it's architecture)
 
-Using these three things it gives us some forecast of what is going to happen as: output.  The process of 
+Using these three things it gives us some forecast of what is going to happen as: output.  RNN's are like classical neural networks in the fact that they learn 'weights': weights act as a way to classify what features of data is considered important in order minimize the difference between reality and what it produces as output. What differentiates RNN's from classical neural networks is that this output is a forecast of the next point in a time-series and that these weights are dependent on each other over time.
+
+Put simply: RNN's learn the *best* features of data and they have memory. This is perfect for our situation- it can learn features of a game that enable it to predict the performance of a player and it can recall previous games to enhance it's ability to do this. So why do we prefer LSTM to RNN? 
+
+
+LSTM are like RNN, but it's mechanism to accessing its memories is much stronger, in particular long-term memories (hence its name). You see, in RNN (or any neural network) it needs to be 'trained' before it can produce sensible outputs- that is it takes time to learn the best weights. In RNN, training long-term memory is almost impossible and attempting to do so results in a network that takes tremendous amounts of time to train and may not even give good results after this. RNN's difficulty with memory comes from the fact that it doesn't differentiate when memory is useful or not and thus its complexity grows exponentially as we try and make it recall further back. Note that long-term memory  acts as *context* to a problem. Example: at time **t** a RNN could know that this player has just begin playing in a major tournament and makes adjustments as such, however this tournament is very long, in fact he is playing up to 40 games. By as little as game **t+10**, the RNN could have 'forgot' that he was playing this tournament and doesn't account for this anymore.
+
+LSTM's are RNN's with long-term memory capabilities. They use a technique called 'gating' which allows the LSTM to allow or disallow information through its network over time. In this respect LSTM's are substantially more efficient to train in general and are able to be trained with long-term memories.
+
+Below is an image from (Libo's Blog)(http://next.sh/blog/2016/03/24/lecture-10-recurrent-neural-networks-and-image-captioning-lstm-stanford-cs231n/)
+
