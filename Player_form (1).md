@@ -101,5 +101,7 @@ LSTM are like RNN, but it's mechanism to accessing its memories is much stronger
 
 LSTM's are RNN's with long-term memory capabilities. They use a technique called 'gating' which allows the LSTM to allow or disallow information through its network over time. In this respect LSTM's are substantially more efficient to train in general and are able to be trained with long-term memories.
 
-Below is an image from (Libo's Blog)(http://next.sh/blog/2016/03/24/lecture-10-recurrent-neural-networks-and-image-captioning-lstm-stanford-cs231n/)
+Below is an image from [Libo's Blog](http://next.sh/blog/2016/03/24/lecture-10-recurrent-neural-networks-and-image-captioning-lstm-stanford-cs231n/) that might give some insight as to the difference between RNN (notice RNN lets everything through, wearas LSTM is beeing 'choosey':
+
+![N|Solid](http://next.sh/images/2016-03-24-RNN-vs-LSTM.png)
 
