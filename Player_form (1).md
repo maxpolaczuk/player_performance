@@ -4,13 +4,13 @@ Estimation of the outcome of a game requires knowledge and insight into many var
 The crux of trying to bet on the outcome of a game (or anything in life with uncertainty), is that the number of variables that contribute to the final outcome of a series of actions is infinitely numerous, and thus infinitely complex to measure. The term ‘estimation’ comes from approximating reality, we do not know all these variables, and want to extract the most important ones to estimate what will happen. We believe that one of these important variables to estimate is ‘player form’.
 
 
-**What is 'player form'?** \
+**What is 'player form'?** 
 In short, form is a measure of how well a player is doing, compared to how he normally does. People sometimes describe a player being on form for long periods of time as on a ‘hot-streak’, while conversely, describing a player who is not on form as ‘in a slump’.
 More formally for a single game, we measure form as the percentage deviation from their mean performance.
 We argue (and hope you can agree) that understanding when a player is (or isn’t) on form, should give us some more confidence as to who is going to win the game.
 
 
-**Estimation of player form** \
+**Estimation of player form** 
 One thing you may be thinking to yourself is:
 
 
