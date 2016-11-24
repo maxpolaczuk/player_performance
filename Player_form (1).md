@@ -84,7 +84,12 @@ How can one make money out of this? In particular, how are we able to estimate w
 **RNN's:**
 Before we can talk about LSTM, we need to (very briefly) cover the superset that they belong to -Recurrent Neural Networks.
 
-RNN's are time-dependent (sequential) neural networks which are used for forecasting a series of outcomes given some sequential input data. This sounds quite technical, but lets go through our particular problem and see how a standard RNN will try and solve it. After this we will discuss the shortcoming of RNN and why we are prefering to use LSTM's instead.
+RNN's are time-dependent (sequential) neural networks which are used for forecasting a series of outcomes given some sequential input data. This sounds quite technical, but lets go through our particular problem and see how a standard RNN works and how it would try and solve it. After this we will discuss the advantages of LSTM over RNN.
 
+In its existence a RNN knows 3 things: 
 
+*The input data
+*What it is trying to optimize
+*That it is an RNN (it's architecture).
 
+Using these three things it gives us some forecast
