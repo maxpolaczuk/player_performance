@@ -86,10 +86,10 @@ Before we can talk about LSTM, we need to (very briefly) cover the superset that
 
 RNN's are time-dependent (sequential) neural networks which are used for forecasting a series of outcomes given some sequential input data. This sounds quite technical, but lets go through our particular problem and see how a standard RNN works and how it would try and solve it. After this we will discuss the advantages of LSTM over RNN.
 
-In its existence a RNN knows 3 things: 
+In its existence a RNN 'knows' 3 things: 
 
-* The input data
-* What it is trying to optimize
-* That it is an RNN (it's architecture).
+*1: The input data
+*2: What it is trying to optimize
+*3: That it is an RNN (it's architecture)
 
-Using these three things it gives us some forecast
+Using these three things it gives us some forecast of what is going to happen as: output.  The process of 
