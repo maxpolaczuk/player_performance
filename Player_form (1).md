@@ -88,8 +88,8 @@ RNN's are time-dependent (sequential) neural networks which are used for forecas
 
 In its existence a RNN knows 3 things: 
 
-*The input data
-*What it is trying to optimize
-*That it is an RNN (it's architecture).
+* The input data
+* What it is trying to optimize
+* That it is an RNN (it's architecture).
 
 Using these three things it gives us some forecast
