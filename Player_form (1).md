@@ -82,6 +82,9 @@ The first half of this blog discussed what we wanted to know and an example of h
 How can one make money out of this? In particular, how are we able to estimate what a players form will be *before* the game has happened? This is the vital and having a good estimate *before* the fact is key to improving your insight as to what the outcome of a game should be and thus improving your payoffs the long-run. The solution to future estimation of form is where Machine Learning coming in; specifically an extension of Recurrent Neural Networks (RNN)-the Long-Term Short-Term (LSTM) model.
 
 **RNN's:**
-Before we can talk about LSTM, we need to cover the superset of models that they belong to
+Before we can talk about LSTM, we need to (very briefly) cover the superset that they belong to -Recurrent Neural Networks.
+
+RNN's are time-dependent (sequential) neural networks which are used for forecasting a series of outcomes given some sequential input data. This sounds quite technical, but lets go through our particular problem and see how a standard RNN will try and solve it. After this we will discuss the shortcoming of RNN and why we are prefering to use LSTM's instead.
+
 
 
