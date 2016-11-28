@@ -47,7 +47,7 @@ Defining relative performance required some creation of metrics (measurement) on
 
 So finally, lets give this metric some functional form and define a players performance at game **T**:
 
-![N|Solid](http://i64.tinypic.com/99gsih.jpg)
+![N|Solid](http://i66.tinypic.com/11ta03o.jpg)
 
 That's better, but it is quite intimidating. Lets discuss what is going on here.
 
@@ -67,13 +67,13 @@ Hopefully it is clear to see that this right hand side expression is indeed incr
 
 **Recall**: This is not the complete picture. We want to estimate 'Form' in game T- this is defined by the ratio of performance in game t (defined above) and a players average performance. Thankfully, at this stage, we have already done most of the work- getting this average is quite trivial. An average of performance is simple to take this performance measure for each game in this players history (exluding game t) and to take the average! This is given (and expanded) below, using summation notation:
 
-![N|Solid](http://i68.tinypic.com/x54av.jpg)
+![N|Solid](http://i67.tinypic.com/ru49xk.jpg)
 
 An even more formidable equation...but let me talk you through it and you will see it is not so bad. Remember that we are simply taking the average of a players performance for all games excluding game T. In this respect, we can refer to the large 'E' looking symbol symbol- called 'Sigma' and the fraction behind it. What Sigma does is sum (add)- in particular, it is summing from the bottom part (0) to the top (T-1). If you treat a players first ever game as game 0 and the game right before game T as game T-1, then this Sigma this is summing the player performances across all of the games they have every played professionally, up until game T. The second term is dividing everything by T-1..., but hold on- we are adding up the performances across 0 to T-1 games and then we are dividing this by T-1- isn't is just an expression for the avergage player performance? Yes it is, and this is why it is formulated like this. Not so scary after all.
 
 Finally, the overall expression of **form** in its full extent- our true goal:
 
-![N|Solid](http://i64.tinypic.com/bhhfmf.jpg)
+![N|Solid](http://i63.tinypic.com/m8eog7.jpg)
 
 #Machine Learning-RNN's and LSTM
 
